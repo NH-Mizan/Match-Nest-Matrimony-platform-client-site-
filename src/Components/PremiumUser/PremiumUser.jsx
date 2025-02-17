@@ -15,8 +15,8 @@ import usePremium from "../../CastomHooks/Hooks/usePremium";
 const PremiumUser = () => {
     const [biodatas] = useBiodata();
     const[premiumUser]=usePremium()
-    // const [premiumUsers, setPremiumUsers] = useState(premiumUser);
-    const [isAscending, setIsAscending] = useState(true); // Sorting state
+   
+    const [isAscending, setIsAscending] = useState(true); 
  console.log(premiumUser)
     // Sorting based on age
     const sortedPremiumUsers = premiumUser?.sort((a, b) =>

@@ -11,14 +11,14 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { user, handleLogOutProvider } = useContext(Context)
   return (
-    <div className="">
-      <div className='relative  shadow dark:bg-gray-800 bg-purple-200 '>
+    <div className="fixed w-full z-50">
+      <div className='relative  shadow bg-red-200 '>
         <nav className="w-11/12 mx-auto">
           <div className="py-4 mx-auto">
             <div className="lg:flex lg:items-center lg:justify-between">
               <div className="flex items-center justify-between">
                 <div>
-                  <h2 className="text-xl font-bold">Match<span className='text-orange-500'>Nest</span> </h2>
+                  <h2 className="text-xl font-bold">Match<span className='text-purple-600'>Nest</span> </h2>
 
                 </div>
 
@@ -100,25 +100,25 @@ const Navbar = () => {
                 <div className="flex flex-col -mx-6 lg:flex-row font-bold lg:items-center lg:mx-8">
                   <NavLink
                     to={'/'}
-                    className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-gray-100 "
                   >
                     Home
                   </NavLink>
                   <NavLink
                     to={'/biodatas'}
-                    className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-gray-100"
                   >
                     Biodatas
                   </NavLink>
                   <NavLink
                     to={'/about'}
-                    className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-gray-100 "
                   >
                     About Us
                   </NavLink>
                   <NavLink
                     to={'/contact'}
-                    className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-gray-100 "
                   >
                     Contact Us
                   </NavLink>
@@ -148,7 +148,7 @@ const Navbar = () => {
                           </ul>
                         </div>
                         :
-                        <Link to={'/login'} className='btn btn-error mr-4'>LogIn</Link>
+                        <Link to={'/login'} className='btn btn-neutral mr-4'>LogIn</Link>
                     }
 
 
