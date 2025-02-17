@@ -11,7 +11,11 @@ const ContactUs = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen pt-24 flex flex-col items-center py-10 px-4">
-      <h2 className="text-3xl font-bold mb-6 text-blue-700">Contact Us</h2>
+   
+      <h2 className="text-3xl font-semibold text-center mb-10 text-gray-800">
+          <span className="text-pink-500">Contact</span>{" "}
+          <span className="text-purple-600">Us</span>
+        </h2>
       <div className="bg-white shadow-lg rounded-lg overflow-hidden md:flex md:max-w-4xl w-full">
         {/* Left Section: Contact Form */}
         <div className="md:w-2/3 p-6">
@@ -21,7 +25,7 @@ const ContactUs = () => {
               <label className="block text-gray-700 font-bold">Your Name</label>
               <input
                 type="text"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-pink-300"
                 placeholder="Enter your name"
                 required
               />
@@ -30,7 +34,7 @@ const ContactUs = () => {
               <label className="block text-gray-700 font-bold">Email</label>
               <input
                 type="email"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-pink-300"
                 placeholder="Enter your email"
                 required
               />
@@ -38,7 +42,7 @@ const ContactUs = () => {
             <div>
               <label className="block text-gray-700 font-bold">Message</label>
               <textarea
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-pink-300"
                 rows="5"
                 placeholder="Enter your message"
                 required
@@ -46,7 +50,7 @@ const ContactUs = () => {
             </div>
             <button
               type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300"
+              className="bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 focus:outline-none focus:ring focus:ring-pink-300"
             >
               Send Message
             </button>
@@ -54,7 +58,7 @@ const ContactUs = () => {
         </div>
 
         {/* Right Section: Contact Information */}
-        <div className="md:w-1/3 bg-blue-500 text-white p-6 flex flex-col justify-center items-start">
+        <div className="md:w-1/3 bg-pink-300 text-white p-6 flex flex-col justify-center items-start">
           <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
           <p className="mb-4">
             If you have any questions, feel free to contact us! We’d love to hear from you.
@@ -70,7 +74,7 @@ const ContactUs = () => {
             </div>
             <div>
               <h4 className="font-bold">Email</h4>
-              <p>support@matchnest.com</p>
+              <p>nhmizan999@gmail.com</p>
             </div>
           </div>
         </div>

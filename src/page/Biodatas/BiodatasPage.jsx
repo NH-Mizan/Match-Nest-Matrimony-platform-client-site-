@@ -44,8 +44,10 @@ const BiodatasPage = () => {
   return (
     <div className="flex w-11/12 mx-auto pt-20">
       {/* Left: Filter Section */}
-      <div className="w-1/4 bg-gray-100 p-4">
+      <div className="w-1/4  bg-gray-100 p-4">
+        <div className="fixed">
         <FilterSection setFilters={setFilters} />
+        </div>
       </div>
 
       {/* Right: Biodata Display */}
@@ -71,7 +73,7 @@ const BiodatasPage = () => {
                 <p className="mb-4">Occupation: {biodata.occupation}</p>
                 <Link
                   to={`/biodataDetails/${biodata._id}`}
-                  className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+                 className="mt-4 my-6 bg-purple-500 text-white py-2 px-6 rounded hover:bg-purple-600"
                 >
                   View Profile
                 </Link>
@@ -89,7 +91,7 @@ const BiodatasPage = () => {
               onClick={() => handlePageChange(currentPage - 1)}
               disabled={currentPage === 1}
               className={`mx-2 py-2 px-4 rounded border ${
-                currentPage === 1 ? "bg-gray-300 text-gray-500" : "bg-blue-500 text-white"
+                currentPage === 1 ? "bg-gray-300 text-gray-500" : "bg-purple-500 text-white"
               }`}
             >
               Previous
@@ -100,8 +102,8 @@ const BiodatasPage = () => {
                 onClick={() => handlePageChange(index + 1)}
                 className={`mx-1 py-2 px-4 rounded border ${
                   currentPage === index + 1
-                    ? "bg-green-500 text-white"
-                    : "bg-white text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-white"
+                    ? "bg-pink-500 text-white"
+                    : "bg-white text-purple-500 border-purple-500 hover:bg-purple-600 hover:text-white"
                 }`}
               >
                 {index + 1}
@@ -111,7 +113,7 @@ const BiodatasPage = () => {
               onClick={() => handlePageChange(currentPage + 1)}
               disabled={currentPage === totalPages}
               className={`mx-2 py-2 px-4 rounded border ${
-                currentPage === totalPages ? "bg-gray-300 text-gray-500" : "bg-blue-500 text-white"
+                currentPage === totalPages ? "bg-gray-300 text-gray-500" : "bg-purple-500 text-white"
               }`}
             >
               Next

@@ -40,11 +40,12 @@ const Dashboard = () => {
     // const isAdmin = false;
     
     return (
-        <div className="min-h-screen w-11/12 mx-auto flex bg-gray-100">
+        <div className="min-h-screen mx-auto flex bg-gray-100">
 
             {/* Sidebar for Dashboard Navigation */}
-            {
-                isAdmin? <div className="w-1/4 p-4 bg-white mt-12 shadow-md ">
+          <div className="w-1/4 min-h-screen bg-white">
+          {
+                isAdmin? <div className=" p-4  fixed  ">
                      <h2 className="text-lg font-bold mb-4">Admin Dashboard</h2>
 
                      <ul>
@@ -101,7 +102,7 @@ const Dashboard = () => {
 
                 </div> 
                 :
-                <div className="w-1/4 p-4 bg-white mt-12 shadow-md ">
+                <div className="w-1/4 p-4 fixed  ">
                 <h2 className="text-lg font-bold mb-4">User Dashboard</h2>
                 <ul>
                     <li className="mb-2">
@@ -163,6 +164,7 @@ const Dashboard = () => {
                 </ul>
             </div>
             }
+          </div>
          <div className='mt-12 ml-8 w-3/4'>
          
          <Outlet />

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const AboutUsPage = () => {
   useEffect(()=>{
@@ -54,12 +55,12 @@ const AboutUsPage = () => {
 
       {/* Call to Action */}
       <div className="text-center mt-12">
-        <h3 className="text-2xl font-bold text-gray-700">
+        <h3 className="text-2xl font-bold mb-6 text-gray-700">
           Ready to find your perfect match?
         </h3>
-        <button className="mt-4 bg-purple-500 text-white py-2 px-6 rounded hover:bg-purple-600">
+        <Link to={'/biodatas'} className="mt-4 my-6 bg-purple-500 text-white py-2 px-6 rounded hover:bg-purple-600">
           Get Started
-        </button>
+        </Link>
       </div>
     </div>
   );

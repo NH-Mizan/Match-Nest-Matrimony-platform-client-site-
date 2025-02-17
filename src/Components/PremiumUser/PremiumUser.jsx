@@ -14,16 +14,16 @@ import usePremium from "../../CastomHooks/Hooks/usePremium";
 
 const PremiumUser = () => {
     const [biodatas] = useBiodata();
-    const[premiumUser]=usePremium()
-   
-    const [isAscending, setIsAscending] = useState(true); 
- console.log(premiumUser)
+    const [premiumUser] = usePremium()
+
+    const [isAscending, setIsAscending] = useState(true);
+    console.log(premiumUser)
     // Sorting based on age
     const sortedPremiumUsers = premiumUser?.sort((a, b) =>
         isAscending ? a.result.age - b.result.age : b.result.age - a.result.age
     );
 
-   
+
 
     // Toggle sort order
     const toggleSortOrder = () => {
@@ -32,11 +32,11 @@ const PremiumUser = () => {
 
     return (
         <div className="py-12 w-11/12 mx-auto">
-           
+
             <h2 className="text-3xl font-semibold text-center mb-10 text-gray-800">
-          <span className="text-purple-500">Premium</span>{" "}
-          <span className="text-pink-600">Users</span>
-        </h2>
+                <span className="text-purple-500">Premium</span>{" "}
+                <span className="text-pink-600">Users</span>
+            </h2>
 
             {/* Sort Button */}
             <div className="text-center mb-8">
@@ -62,7 +62,7 @@ const PremiumUser = () => {
 
                             <CardBody>
                                 <Typography variant="h5" color="blue-gray" className="mb-2">
-                                  ID:  {premiumUser.result.biodataId}
+                                    ID:  {premiumUser.result.biodataId}
                                 </Typography>
                                 <Typography variant="p" color="blue-gray" className="mb-2">
                                     {premiumUser.result.biodataType}
@@ -80,12 +80,10 @@ const PremiumUser = () => {
                                 </Typography>
                             </CardBody>
                             <CardFooter className="pt-0">
-                                <Link
-                                    to={`/biodataDetails/${premiumUser.result._id}`}
-                                    className="  text-white  bg-purple-500 py-2 px-4 rounded-xl border-2 border-pink-500"
-                                >
+                                <Link to={`/biodataDetails/${premiumUser.result._id}`} className="mt-4 my-6 bg-purple-500 text-white py-2 px-6 rounded hover:bg-purple-600">
                                     View More
                                 </Link>
+                             
                             </CardFooter>
                         </Card>
                     </div>
