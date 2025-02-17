@@ -29,8 +29,8 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-gray-300">
+      <div className="w-11/12 mx-auto">
         <h2 className="text-3xl font-semibold text-center mb-10 text-gray-800">
           <span className="text-pink-500">How</span>{" "}
           <span className="text-purple-600">MatchNest Works</span>
