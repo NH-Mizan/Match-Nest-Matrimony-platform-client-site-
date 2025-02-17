@@ -17,10 +17,16 @@ const SuccessStory = () => {
   );
 
   return (
-    <div className="bg-gray-50 py-12 w-11/12 mx-auto">
+   <div className="bg-base-300">
+     <div className="py-12 w-11/12 mx-auto">
       <h2 className="text-3xl font-extrabold text-center mb-8 text-purple-600">
-        Success Stories
+         
       </h2>
+      <h2 className="text-3xl font-semibold text-center mb-10 text-gray-800">
+          <span className="text-purple-500">Our</span>{" "}
+          <span className="text-pink-600">Success</span>{" "}
+          <span className="text-purple-500">Stories</span>
+        </h2>
       <Swiper
         modules={[Virtual, Navigation, Pagination]}
         slidesPerView={1}
@@ -32,7 +38,7 @@ const SuccessStory = () => {
       >
         {sortedStories?.map((story) => (
           <SwiperSlide key={story.id || story._id}>
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+            <div className=" p-6 rounded-lg shadow-md flex flex-col items-center text-center">
               <img
                 src={story.coupleImage || "https://via.placeholder.com/150"}
                 alt="Couple"
@@ -62,6 +68,7 @@ const SuccessStory = () => {
         ))}
       </Swiper>
     </div>
+   </div>
   );
 };
 

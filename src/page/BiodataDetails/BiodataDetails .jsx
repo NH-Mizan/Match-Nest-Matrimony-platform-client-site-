@@ -79,7 +79,7 @@ const BiodataDetails = () => {
   if (!biodata) return <Loading/>
 
   return (
-    <div className="w-11/12 mx-auto mt-6">
+    <div className="w-11/12 mx-auto pt-24">
       <div className="bg-lime-100 p-4 rounded-xl biodata-details ">
         <h2 className="text-xl font-bold">{biodata?.name}'s Biodata</h2>
 

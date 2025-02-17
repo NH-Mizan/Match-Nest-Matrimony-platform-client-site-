@@ -20,7 +20,7 @@ const currentYear = new Date().getFullYear();
 const Footer = () => {
   return (
     <div>
-      <footer className="relative bg-purple-300 w-full  pt-12">
+      <footer className="relative bg-neutral-800 w-full  pt-12">
         <div className="mx-auto w-full max-w-7xl px-8 ">
           <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
             <Typography variant="h5" className="mb-6">
