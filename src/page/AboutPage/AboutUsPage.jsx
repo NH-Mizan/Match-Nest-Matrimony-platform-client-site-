@@ -5,7 +5,7 @@ const AboutUsPage = () => {
  document.title ='About Us || MatchNest'
   },[])
   return (
-    <div className=" py-8 bg-gray-100 min-h-screen">
+    <div className=" py-8 pt-24 bg-gray-100 min-h-screen">
       {/* Page Title */}
       <div className=" text-center mb-8">
         <h1 className="text-4xl font-bold text-purple-700">About Us</h1>

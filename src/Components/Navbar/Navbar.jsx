@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { user, handleLogOutProvider } = useContext(Context)
   return (
-    <div className="fixed w-full z-50">
+    <div className="fixed w-full z-50 ">
       <div className='relative  shadow bg-red-200 '>
         <nav className="w-11/12 mx-auto">
           <div className="py-4 mx-auto">

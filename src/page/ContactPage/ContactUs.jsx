@@ -10,7 +10,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-4">
+    <div className="bg-gray-100 min-h-screen pt-24 flex flex-col items-center py-10 px-4">
       <h2 className="text-3xl font-bold mb-6 text-blue-700">Contact Us</h2>
       <div className="bg-white shadow-lg rounded-lg overflow-hidden md:flex md:max-w-4xl w-full">
         {/* Left Section: Contact Form */}

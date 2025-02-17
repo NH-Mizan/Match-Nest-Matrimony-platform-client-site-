@@ -42,7 +42,7 @@ const BiodatasPage = () => {
   if (!biodatas) return <Loading/>
 
   return (
-    <div className="flex w-11/12 mx-auto">
+    <div className="flex w-11/12 mx-auto pt-20">
       {/* Left: Filter Section */}
       <div className="w-1/4 bg-gray-100 p-4">
         <FilterSection setFilters={setFilters} />
