@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 const Banner = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const viewMoreBtn = () =>{
+    // const viewMoreBtn = () =>{
   
-    }
+    // }
     const slides = [
         {
             title: "From Strangers to Partners",
@@ -61,7 +61,7 @@ const Banner = () => {
                         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-6">
                             <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
                             <p className="text-lg text-center mt-6 max-w-2xl">{slide.description}</p>
-                            <button onClick={viewMoreBtn} className='btn btn-secondary  mt-24'>View More</button>
+                            {/* <button onClick={viewMoreBtn} className='btn btn-secondary  mt-24'>View More</button> */}
                         </div>
                     </div>
                 ))}
