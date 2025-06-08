@@ -63,7 +63,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/biodataDetails/:id',
-        element:<Private><BiodataDetails/></Private>
+        element:<BiodataDetails/>
       },
       {
         path:'/checkout/:id',

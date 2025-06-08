@@ -49,6 +49,10 @@ const LogIn = () => {
                         <h2 className="text-3xl font-bold text-center mb-6 ">Welcome Back Login Now !!</h2>
                         <form onSubmit={handleLoginForm} className="card-body border-2 border-white bg-green-100  p-4 rounded-xl">
                             <div className="form-control">
+                               <div className="bg-purple-100 p-2 rounded-lg">
+                               <h2>Admin Gmail: <span className='text-pink-300'> ph@gmail.com</span></h2>
+                               <h2>Password: <span  className='text-pink-300'> 1234567</span></h2>
+                               </div>
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>

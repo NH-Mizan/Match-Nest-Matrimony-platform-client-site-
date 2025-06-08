@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .active{
-color:  #8e24aa;
-text-shadow: 2px 2px  10px #8e24aa ;
+color:  cyan;
+text-shadow: 2px 2px  10px cyan;
 font-size: 18px;
 }

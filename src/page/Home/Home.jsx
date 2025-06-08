@@ -4,6 +4,7 @@ import HowItWorks from '../../Components/HowItWorks';
 import SuccessCounter from '../../Components/CounterBox/SuccessCounter ';
 import PremiumUser from '../../Components/PremiumUser/PremiumUser';
 import SuccessStory from '../../Components/PremiumUser/SuccessStory';
+import ContactUs from '../ContactPage/ContactUs';
 
 const Home = () => {
     useEffect(()=>{
@@ -18,6 +19,7 @@ const Home = () => {
             <HowItWorks/>
             <SuccessCounter/>
             <SuccessStory/>
+            <ContactUs/>
             
         </div>
     );
