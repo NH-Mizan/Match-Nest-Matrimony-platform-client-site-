@@ -94,7 +94,7 @@ const Banner = () => {
                 {slides.map((_, index) => (
                     <button
                         key={index}
-                        className={`btn btn-xs ${currentIndex === index ? "bg-warning" : "bg-gray-300"
+                        className={`btn btn-xs ${currentIndex === index ? "bg-cyan-500" : "bg-gray-300"
                             }`}
                         onClick={() => setCurrentIndex(index)}
                     />
