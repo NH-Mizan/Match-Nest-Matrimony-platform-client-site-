@@ -28,7 +28,7 @@ const Navbar = () => {
                   <button
                     onClick={() => setIsOpen(!isOpen)}
                     type="button"
-                    className="text-white dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                    className="text-white  focus:outline-none "
                     aria-label="toggle menu"
                   >
                     {!isOpen ? (
@@ -94,7 +94,7 @@ const Navbar = () => {
 
               {/* Mobile Menu */}
               <div
-                className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'
+                className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-black dark:bg-gray-800 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'
                   }`}
               >
                 <div className="flex flex-col -mx-6 lg:flex-row font-bold lg:items-center lg:mx-8">
