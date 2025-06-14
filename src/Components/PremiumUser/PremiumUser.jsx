@@ -13,11 +13,10 @@ import { Link } from "react-router-dom";
 import usePremium from "../../CastomHooks/Hooks/usePremium";
 
 const PremiumUser = () => {
-    const [biodatas] = useBiodata();
     const [premiumUser] = usePremium()
 
     const [isAscending, setIsAscending] = useState(true);
-    console.log(premiumUser)
+    // console.log(premiumUser)
     // Sorting based on age
     const sortedPremiumUsers = premiumUser?.sort((a, b) =>
         isAscending ? a.result.age - b.result.age : b.result.age - a.result.age
@@ -32,22 +31,30 @@ const PremiumUser = () => {
 
     return (
         <div className="py-12 w-11/12 mx-auto">
-
-            <h2 className="text-3xl font-semibold text-center mb-10 text-gray-800">
-                <span className="text-purple-500">Premium</span>{" "}
-                <span className="text-pink-600">Users</span>
+            <div className="flex justify-between items-center">
+           <div className="">
+           <h2 className="text-3xl font-semibold ">
+                <span className="text-cyan-500">Premium</span>{" "}
+                <span className="text-black">Users</span>
             </h2>
-
-            {/* Sort Button */}
-            <div className="text-center mb-8">
+           </div>
+            <div className=" mb-8">
                 <button
                     onClick={toggleSortOrder}
-                    className="bg-pink-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-black"
+                    className=" text-black  font-bold py-2 px-4 rounded-lg shadow-md border-2 border-cyan-500"
                 >
-                    Sort by Age: {isAscending ? "Ascending" : "Descending"}
+                    Sort by Age: <span className="text-cyan-500">
+                    {isAscending ? "Ascending" : "Descending"}
+                    </span>
                 </button>
             </div>
 
+            </div>
+
+           
+
+            {/* Sort Button */}
+         
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 {sortedPremiumUsers?.map((premiumUser) => (
                     <div key={premiumUser._id} className="">
